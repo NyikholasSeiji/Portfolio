@@ -1,28 +1,22 @@
-# Nyikholas Seiji — Portfolio
+# Portfolio — Nyikholas Seiji
+This is my first personal portfolio, built as a beginner developer to showcase who I am and what I've been working on.  
+The purpose of this project is to practice front-end development and improve my skills over time.
 
-This is my first personal portfolio, built as a beginner developer to showcase who I am and what I've been working on.
+## 📄 Sections
+- **Home** — introduction and profile
+- **About Me** — a little about my background
+- **Projects** — my current work and studies
+- **Contact** — contact form powered by EmailJS
 
-## About
-
-I'm Nyikholas Seiji, a student of Systems Analysis and Development at FATEC Ipiranga. This portfolio is part of my learning journey — it's not perfect, but it's mine, and I'm constantly improving it.
-
-## What's inside
-
-- A brief introduction about me
-- A projects section with my current work
-- A contact form powered by EmailJS
-
-## Tech stack
-
+## 🛠 Technologies Used
 - HTML
 - CSS
 - JavaScript
 - EmailJS
+- Git & GitHub
 
-## Status
+## 🎯 Purpose
+The main goal of this portfolio is to document my growth as a developer and present my projects in a clean and organized way. This is just the beginning — I'm constantly learning and improving.
 
-Work in progress. As I grow as a developer, this portfolio will grow with me.
-
----
-
-*First portfolio — beginner level, improving every day.*
+## 👨‍💻 Author
+Developed by Nyikholas Seiji.
