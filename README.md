@@ -7,6 +7,7 @@ The purpose of this project is to practice front-end development and improve my 
 - **About Me** — a little about my background
 - **Projects** — my current work and studies
 - **Contact** — contact form powered by EmailJS
+- **Music Player** — ambient music sidebar with play, pause, and track controls
 
 ## 🛠 Technologies Used
 - HTML
