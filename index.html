@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seiji | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <div class="particulas"></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="profile">
+        <img
+          class="profile"
+          src="assets/img/profile.png"
+          alt="Profile Picture"
+        />
+        <div class="profileText">
+          <h1>Nyikholas Seiji</h1>
+          <h2>Student Developer</h2>
+        </div>
+      </div>
+      <section id="about" class="hidden">
+        <h1>About Me</h1>
+        <p>
+          My name is Seiji, I have a technical degree in administration from
+          ETEC Ipiranga and I am a future technologist in Systems Analysis and
+          Development from FATEC Ipiranga.
+        </p>
+      </section>
+
+      <section id="projects" class="hidden">
+        <h1>Projects</h1>
+        <p>
+          For now, just my
+          <a
+            href="https://github.com/NyikholasSeiji/exerciseJava"
+            target="_blank"
+            >Java lessons</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <div id="contact" class="hidden">
+      <section class="contact">
+        <h2 class="contact-Tittle">Contact</h2>
+        <form id="form" class="form-contact">
+          <div class="form-group">
+            <input placeholder="Name" class="form-camp" id="name" />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-text"
+              placeholder="Text your message"
+              id="message"
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-button">Send via Email</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <img class="footerimg" src="assets/img/github.png" alt="github logo" />
+        <a href="https://github.com/NyikholasSeiji" target="_blank">GitHub</a>
+        <img
+          class="footerimg"
+          src="assets/img/linkedin.png"
+          alt="linkedin logo"
+        />
+        <a href="https://www.linkedin.com/in/nyikholas-seiji/" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+      <div class="footer-location">Brazil, São Paulo</div>
+    </footer>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
