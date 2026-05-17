@@ -153,6 +153,23 @@ section a:hover {
   text-decoration: underline;
 }
 
+.btn-download {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, var(--bg-secondary), var(--accent-focus));
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
 #contact {
   display: flex;
   justify-content: center;
