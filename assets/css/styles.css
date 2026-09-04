@@ -153,9 +153,19 @@ section a:hover {
   text-decoration: underline;
 }
 
-.project-card {
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
   width: 100%;
-  max-width: 700px;
+  max-width: 1100px;
+}
+
+.project-card {
+  flex: 1 1 400px;
+  max-width: 520px;
+  width: 100%;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 20px;
@@ -165,11 +175,18 @@ section a:hover {
   align-items: center;
   gap: 14px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .project-preview {
   width: 100%;
-  max-width: 420px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -209,7 +226,7 @@ section a:hover {
 }
 
 .project-link {
-  margin-top: 6px;
+  margin-top: auto;
   font-weight: bold;
 }
 
