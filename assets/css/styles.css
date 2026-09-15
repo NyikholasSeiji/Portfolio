@@ -159,12 +159,12 @@ section a:hover {
   justify-content: center;
   gap: 32px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1250px;
 }
 
 .project-card {
-  flex: 1 1 400px;
-  max-width: 520px;
+  flex: 1 1 340px;
+  max-width: 480px;
   width: 100%;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
