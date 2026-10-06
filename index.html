@@ -14,12 +14,16 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#profile">Início</a></li>
-          <li><a href="#about">Sobre Mim</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#profile" data-i18n="nav.home">Início</a></li>
+          <li><a href="#about" data-i18n="nav.about">Sobre Mim</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
         </ul>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
     </header>
 
     <main>
@@ -28,6 +32,7 @@
           class="profile"
           src="assets/img/profile.png"
           alt="Foto de Perfil"
+          data-i18n-alt="profile.alt"
         />
         <div class="profileText">
           <h1>Nyikholas Seiji</h1>
@@ -35,29 +40,35 @@
         </div>
       </div>
       <section id="about" class="hidden">
-        <h1>Sobre Mim</h1>
-        <p>
+        <h1 data-i18n="about.title">Sobre Mim</h1>
+        <p data-i18n="about.text">
           Meu nome é Nyikholas Seiji, tenho formação técnica em Administração pela
           ETEC Getúlio Vargas e sou futuro tecnólogo em Análise e Desenvolvimento
           de Sistemas pela FATEC Ipiranga.
         </p>
-        <a href="assets/docs/CV Nyikholas.pdf" download class="btn-download">
-          ⬇ Baixar currículo
-        </a>
+        <a
+          href="assets/docs/CV Nyikholas.pdf"
+          download
+          class="btn-download"
+          id="cv-download"
+          data-i18n="about.cv"
+          >⬇ Baixar currículo</a
+        >
       </section>
 
       <section id="projects" class="hidden">
-        <h1>Projetos</h1>
+        <h1 data-i18n="projects.title">Projetos</h1>
         <div class="projects-container">
           <div class="project-card">
             <img
               class="project-preview"
               src="assets/img/preview.png"
               alt="Preview do site UniqueS"
+              data-i18n-alt="projects.uniques.alt"
             />
-            <div class="project-status">Em desenvolvimento</div>
+            <div class="project-status" data-i18n="projects.status">Em desenvolvimento</div>
             <h3>UniqueS</h3>
-            <p>
+            <p data-i18n="projects.uniques.desc">
               Plataforma de skincare individualizado: o usuário responde um
               quiz rápido sobre a própria pele e recebe uma rotina de cuidados
               sob medida, sem fórmulas genéricas. Estou desenvolvendo o
@@ -76,6 +87,7 @@
               class="project-link"
               href="https://github.com/NyikholasSeiji/uniques-frontend"
               target="_blank"
+              data-i18n="projects.repo"
               >Ver repositório no GitHub</a
             >
           </div>
@@ -85,10 +97,11 @@
               class="project-preview"
               src="assets/img/project-preview.png"
               alt="Preview do site FNShop"
+              data-i18n-alt="projects.fnshop.alt"
             />
-            <div class="project-status">Em desenvolvimento</div>
+            <div class="project-status" data-i18n="projects.status">Em desenvolvimento</div>
             <h3>FNShop</h3>
-            <p>
+            <p data-i18n="projects.fnshop.desc">
               Loja virtual e plataforma de e-commerce desenvolvida em Angular para compor a nota da matéria de Desenvolvimento de Software.
               O projeto adota princípios de Clean Architecture adaptados ao front-end (separação entre domínio, casos de uso,
               infraestrutura e apresentação), contando com catálogo de produtos, busca com filtros, carrinho de compras,
@@ -106,6 +119,7 @@
               class="project-link"
               href="https://github.com/NyikholasSeiji/developer-web-project"
               target="_blank"
+              data-i18n="projects.repo"
               >Ver repositório no GitHub</a
             >
           </div>
@@ -115,10 +129,11 @@
               class="project-preview"
               src="assets/img/CondoHub-preview.png"
               alt="Preview do site CondoHub"
+              data-i18n-alt="projects.condohub.alt"
             />
-            <div class="project-status">Em desenvolvimento</div>
+            <div class="project-status" data-i18n="projects.status">Em desenvolvimento</div>
             <h3>CondoHub</h3>
-            <p>
+            <p data-i18n="projects.condohub.desc">
               Sistema Integrado de Gestão Condominial desenvolvido como Projeto Integrador do curso de ADS na FATEC Ipiranga.
               A plataforma centraliza o ciclo operacional e a comunicação do condomínio em painéis dedicados por perfil
               (síndico, morador, porteiro e funcionário), cobrindo manutenção preventiva, gestão de vagas para veículos elétricos,
@@ -134,15 +149,17 @@
               class="project-link"
               href="https://github.com/DiegoLopesSakata/CondoHUB"
               target="_blank"
+              data-i18n="projects.repo"
               >Ver repositório no GitHub</a
             >
           </div>
         </div>
         <p>
-          Além disso, minhas
+          <span data-i18n="projects.more">Além disso, minhas</span>
           <a
             href="https://github.com/NyikholasSeiji/exerciseJava"
             target="_blank"
+            data-i18n="projects.java"
             >lições de Java</a
           >.
         </p>
@@ -151,19 +168,27 @@
 
     <div id="contact" class="hidden">
       <section class="contact">
-        <h2 class="contact-Tittle">Contato</h2>
+        <h2 class="contact-Tittle" data-i18n="contact.title">Contato</h2>
         <form id="form" class="form-contact">
           <div class="form-group">
-            <input placeholder="Nome" class="form-camp" id="name" />
+            <input
+              placeholder="Nome"
+              class="form-camp"
+              id="name"
+              data-i18n-placeholder="contact.name"
+            />
           </div>
           <div class="form-group">
             <textarea
               class="form-text"
               placeholder="Digite sua mensagem"
               id="message"
+              data-i18n-placeholder="contact.message"
             ></textarea>
           </div>
-          <button type="submit" class="contact-button">Enviar por Email</button>
+          <button type="submit" class="contact-button" data-i18n="contact.send">
+            Enviar por Email
+          </button>
         </form>
       </section>
     </div>
@@ -181,7 +206,7 @@
           >LinkedIn</a
         >
       </div>
-      <div class="footer-location">Brasil, São Paulo</div>
+      <div class="footer-location" data-i18n="footer.location">Brasil, São Paulo</div>
     </footer>
 
     <div id="music-bar">

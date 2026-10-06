@@ -56,6 +56,42 @@ header {
   z-index: 1000;
 }
 
+.lang-switch {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--bg-primary);
+}
+
+.lang-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    color 0.3s,
+    background 0.3s;
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  background: linear-gradient(90deg, var(--bg-secondary), var(--accent-focus));
+  color: white;
+}
+
 header nav ul {
   display: flex;
   justify-content: center;
