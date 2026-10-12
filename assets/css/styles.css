@@ -239,6 +239,11 @@ section a:hover {
   padding: 4px 12px;
 }
 
+.project-status.online {
+  color: #38d39f;
+  border-color: #38d39f;
+}
+
 .project-card h3 {
   font-size: 26px;
   color: var(--text-primary);
@@ -264,6 +269,19 @@ section a:hover {
 .project-link {
   margin-top: auto;
   font-weight: bold;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-links .project-link {
+  margin-top: 0;
 }
 
 .btn-download {

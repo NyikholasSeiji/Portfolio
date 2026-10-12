@@ -12,7 +12,12 @@ const translations = {
     "about.cv": "⬇ Baixar currículo",
     "projects.title": "Projetos",
     "projects.status": "Em desenvolvimento",
+    "projects.status.online": "Online",
     "projects.repo": "Ver repositório no GitHub",
+    "projects.live": "Acessar aplicação",
+    "projects.osucard.alt": "Preview do site osu!card",
+    "projects.osucard.desc":
+      "Gerador e editor visual de cards para scores do osu! integrado à API oficial (v2) com autenticação OAuth. Permite buscar pontuações públicas ou autenticar com a conta do jogo, personalizar layouts, planos de fundo, tipografia, paletas de cores e importar skins (.osk), com renderização reativa e exportação direta para imagem PNG.",
     "projects.uniques.alt": "Preview do site UniqueS",
     "projects.uniques.desc":
       "Plataforma de skincare individualizado: o usuário responde um quiz rápido sobre a própria pele e recebe uma rotina de cuidados sob medida, sem fórmulas genéricas. Estou desenvolvendo o front-end em React com um back-end em Java/Spring Boot planejado para dar suporte ao diagnóstico e às recomendações.",
@@ -47,7 +52,12 @@ const translations = {
     "about.cv": "⬇ Download resume",
     "projects.title": "Projects",
     "projects.status": "In development",
+    "projects.status.online": "Online",
     "projects.repo": "View repository on GitHub",
+    "projects.live": "View live app",
+    "projects.osucard.alt": "osu!card website preview",
+    "projects.osucard.desc":
+      "Visual card generator and editor for osu! scores integrated with the official osu! API (v2) and OAuth authentication. Allows users to look up public scores or log in with their osu! account, customize layouts, backgrounds, typography, color palettes, and import skins (.osk), featuring reactive rendering and direct PNG export.",
     "projects.uniques.alt": "UniqueS website preview",
     "projects.uniques.desc":
       "Personalized skincare platform: users take a quick quiz about their skin and receive a tailor-made care routine, with no generic formulas. I'm building the front-end in React, with a Java/Spring Boot back-end planned to support the diagnosis and recommendations.",
